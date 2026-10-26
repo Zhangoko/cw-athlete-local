@@ -1,2 +1,19 @@
-# cw-athlete-local
-Coach Work student local edition: results, self-training and personal wellness stay on the device. JSON backup and CSV export.
+# Coach Work 运动员本地版
+
+学生可直接打开 GitHub Pages 链接，无需登录。成绩、自主训练和本人身体记录保存在当前浏览器的 IndexedDB；没有业务服务器、跟踪脚本或数据上传。
+
+- 初次打开是空记录。项目模板不代表已有成绩。
+- 成绩支持新增、修改、删除、搜索筛选、按月历史、同项目同性质趋势；计时成绩越快线越向上。
+- 支持自主训练与本人完成反馈、可留空的身体评分。
+- “我的”可导出完整 JSON 备份、恢复备份，或导出 CSV 成绩表。
+- 同一浏览器共用一个本地档案。设备、浏览器和网站来源不同，数据不会自动同步。清理网站数据后需要用备份恢复。
+- 本地保存不能代替备份。下载后请在下载列表检查文件；恢复会明确确认替换，并请求下载恢复前备份。
+- 页面首次打开需要网络；未承诺未联网时可首次打开。旧版 CW 的数据库、账号和服务不受影响。
+
+## 发布
+
+只发布本目录中的 `index.html`、`base.css`、`app.css`、`model.js`、`app.js`、`icon.svg`、`.nojekyll` 与本说明，**不包含学生数据、测试输出或正式后端源码**。
+
+GitHub Pages：仓库 Settings → Pages → Deploy from a branch → main / root。发布后访问 `https://<账号>.github.io/cw-athlete-local/`。
+
+本目录是学生本地版源码；主设计原型和正式项目保持独立。本目录之外的预览副本只用于本机验证。
